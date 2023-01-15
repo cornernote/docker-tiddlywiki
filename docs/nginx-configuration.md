@@ -22,3 +22,9 @@ services:
     ports:
       - "80:80"
 ```
+
+Then restart the container.
+
+```shell
+docker compose up -d
+```
