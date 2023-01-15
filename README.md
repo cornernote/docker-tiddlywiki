@@ -8,7 +8,7 @@ The image provides tiddlywiki and related services.
 
 ### Quick Start
 
-`cat > docker-compose.yml` (paste from below, then `CTRL+D`)
+`mkdir tiddlywiki && cat > docker-compose.yml` (paste from below, then `CTRL+D`)
 
 ```yaml
 version: '3'
