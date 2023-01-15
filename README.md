@@ -20,7 +20,7 @@ The image provides tiddlywiki and related services.
 ### Quick Start
 
 ```shell
-docker run -d -p 80:80 cornernote/tiddlywiki
+docker run -p 80:80 cornernote/tiddlywiki
 ```
 
 Now access your tiddlywiki from [http://localhost/](http://localhost/). 
