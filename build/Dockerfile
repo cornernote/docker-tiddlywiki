@@ -6,7 +6,7 @@ VOLUME /app
 VOLUME /etc/dhparam/
 
 RUN apk update && \
-    apk add --no-cache git bash supervisor nginx openssh && \
+    apk add --no-cache git bash supervisor nginx openssl && \
     git clone --depth=1 --branch v5.2.3 https://github.com/Jermolene/TiddlyWiki5.git /usr/local/tiddlywiki && \
     git clone --depth=1 https://github.com/OokTech/TW5-Bob.git /usr/local/tiddlywiki/plugins/OokTech/Bob
 
