@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tiddlywiki:
+    build:
+      dockerfile: Dockerfile
+      context: ./build
+    restart: unless-stopped
+    #volumes:
+    #  - ./tiddlywiki:/app
+    #  - ./build/nginx/.htpasswd:/etc/nginx/.htpasswd
+    ports:
+      - "1234:80"
+    #entrypoint: run-nginx.sh
+    #entrypoint: run-tiddlywiki.sh
