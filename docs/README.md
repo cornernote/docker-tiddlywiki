@@ -1,7 +1,8 @@
 # Documentation
 
-## Common Tasks
+## Server Setup
 
+* [Managing Data](managing-data.md)
 * [Basic Authentication](basic-authentication.md)
 * [User Authentication](user-authentication.md)
 * [SSL Installation](ssl-installation.md)
