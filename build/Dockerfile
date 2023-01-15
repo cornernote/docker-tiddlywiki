@@ -20,4 +20,4 @@ COPY --chmod=755 run-tiddlywiki.sh /usr/local/bin
 
 CMD ["run-supervisor.sh"]
 
-EXPOSE 80,443
+EXPOSE 80 443
