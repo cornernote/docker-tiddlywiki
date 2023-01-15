@@ -10,7 +10,7 @@ The image provides tiddlywiki and related services.
 - [Tiddlywiki](https://tiddlywiki.com/) - The most awesome way to take notes.
 - [TW5-Bob](https://github.com/OokTech/TW5-Bob) - Provides real-time multi-user using web sockets.
 - [Nginx](https://www.nginx.com/) - Reverse proxy for:
-  - [User Management](docs/user-management.md)
+  - [Basic Authentication](docs/basic-authentication.md)
   - [HTTPS/SSL Certificates](docs/ssl-installation.md)
 
 

@@ -1,10 +1,23 @@
 # User Authentication
 
-By default the docker image supports user authentication via basic-auth (see [User Management](user-management.md)), and also sends a header to the Tiddlywiki Bob Node instance (`X-Authenticated-User`) containing the username provided to the basic-auth. 
+In addition to [Basic Authentication](basic-authentication.md), you may like to have author usernames displayed on tiddlers.
 
 A couple of changes are required to have tiddlers signed by the logged in user.
 
-## Setup
+## Setup Nginx
+
+We need to send a header to the Tiddlywiki Bob Node instance (`X-Authenticated-User`) containing the username provided to the basic-auth.
+
+Add the following to the `location / { ... }` section of your `build/nginx.conf`.
+
+```
+    location / {
+        ...
+        proxy_set_header X-Authenticated-User $remote_user;
+    }
+```
+
+## Tiddlywiki Setup
 
 In your Tiddlywiki you will need to edit some shadow tiddlers to override them.
 

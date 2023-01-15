@@ -1,5 +1,39 @@
 # User Management
 
+## Setup Basic Authentication
+
+Copy the nginx configuration from the image.
+
+```shell
+mkdir build
+docker cp root_tiddlywiki_1:/etc/nginx/http.d/default.conf build/nginx.conf
+```
+
+Add the following to the `location / { ... }` section. 
+
+```
+    location / {
+        ...
+        auth_basic "Login";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+        proxy_set_header X-Authenticated-User $remote_user;
+    }
+```
+
+Update your `docker-compose.yml`.
+
+```yaml
+version: '3'
+services:
+  tiddlywiki:
+    image: cornernote/tiddlywiki
+    volumes:
+      - ./tiddlywiki:/app
+      - ./build/nginx.conf:/etc/nginx/http.d/default.conf
+    ports:
+      - "80:80"
+```
+
 ## Manage User Logins
 
 User access provided via basic-auth via the `/etc/nginx/.htpasswd` file.

@@ -2,8 +2,8 @@
 
 ## Common Tasks
 
+* [Basic Authentication](basic-authentication.md)
 * [User Authentication](user-authentication.md)
-* [User Management](user-management.md)
 * [SSL Installation](ssl-installation.md)
 
 ## Service Configuration
