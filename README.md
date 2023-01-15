@@ -4,9 +4,28 @@ The image provides tiddlywiki and related services.
 
 [![Pulls](https://img.shields.io/docker/pulls/cornernote/tiddlywiki.svg?style=flat-square)](https://hub.docker.com/r/cornernote/tiddlywiki/)
 
-## Documentation
+## Features
+
+- [Tiddlywiki](https://tiddlywiki.com/) - The most awesome way to take notes.
+- [TW5-Bob](https://github.com/OokTech/TW5-Bob) - Provides real-time multi-user using web sockets.
+- [Nginx](https://www.nginx.com/) - Reverse proxy for:
+  - [User Management](docs/user-management.md)
+  - [HTTPS/SSL Certificates](docs/ssl-configuration.md)
+
+## Installation
 
 ### Quick Start
+
+```shell
+docker run -d -p 80:80 cornernote/tiddlywiki
+```
+
+Now access your tiddlywiki from [http://localhost/](http://localhost/).  The user/pass is `admin`/`admin`.
+
+
+### Using Docker Compose
+
+Docker compose allows you to keep all the configuration for the docker image in a single file, then run using `docker compose up`.  For most of the guides in documentation the `docker compose` method will be used, however you can always apply the same options just using `docker` commands.
 
 `mkdir tiddlywiki && cat > docker-compose.yml` (paste from below, then `CTRL+D`)
 
@@ -27,8 +46,6 @@ Then start the container
 docker compose up -d
 ```
 
-Now access your tiddlywiki from [http://localhost/](http://localhost/).  The user/pass is `admin`/`admin`.
-
 For more examples see [Documentation](docs/README.md) > [Examples](docs/examples/README.md).
 
 
@@ -36,29 +53,10 @@ For more examples see [Documentation](docs/README.md) > [Examples](docs/examples
 
 The image provides several services to run a multi-user tiddlywiki server.
 
-### Tiddlywiki
-
-Tiddlywiki NodeJS.  This is the core of the system.
-
-### TW5-Bob
-
-TW5-Bob is a multi-user plugin for Tiddlywiki.
-
-### Nginx
-
-Nginx is a high-performance HTTP server and reverse proxy.
-
-SSL certificate support for letsencrypt with certbot.
-
-Basic authentication can be configured via a `.htpasswd` file.
-
-The nginx service is available on port 80 and 443.
-
-### Supervisor
-
-Supervisor is a system that allows monitoring and control a number of processes.
-
-Docker runs a single service. Supervisor allows multiple processes to run within a single container.
+- [Tiddlywiki NodeJS](https://tiddlywiki.com/static/TiddlyWiki%2520on%2520Node.js.html) - providing the core of the system
+- [TW5-Bob](https://github.com/OokTech/TW5-Bob) - a plugin that makes tiddlywiki a multi-user wiki on node
+- [Nginx](https://nginx.com) - high-performance HTTP server and reverse proxy
+- [Supervisor](http://supervisord.org/) - allows multiple processes to run within a single container
 
 
 ## Supported tags and `Dockerfile` links
