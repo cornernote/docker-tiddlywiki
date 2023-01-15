@@ -1,6 +1,4 @@
-# User Management
-
-## Setup Basic Authentication
+# Basic Authentication
 
 Copy the nginx configuration from the image.
 
@@ -20,26 +18,6 @@ Add the following to the `location / { ... }` section.
     }
 ```
 
-Update your `docker-compose.yml`.
-
-```yaml
-version: '3'
-services:
-  tiddlywiki:
-    image: cornernote/tiddlywiki
-    volumes:
-      - ./tiddlywiki:/app
-      - ./build/nginx.conf:/etc/nginx/http.d/default.conf
-    ports:
-      - "80:80"
-```
-
-## Manage User Logins
-
-User access provided via basic-auth via the `/etc/nginx/.htpasswd` file.
-
-The default username and password are `admin`/`admin`.
-
 You can create a `.htpasswd` file as follows:
 
 ```shell
@@ -53,7 +31,7 @@ Add users later:
 htpasswd build/.htpasswd anotherusername 
 ```
 
-Mount your `.htpasswd` file into the container by adding the volume to your `docker-compose.yml`.
+Mount your `nginx.conf` and `.htpasswd` file into the container by adding the volume to your `docker-compose.yml`.
 
 ```yaml
 version: '3'
@@ -61,7 +39,11 @@ services:
   tiddlywiki:
     image: cornernote/tiddlywiki
     volumes:
+      - ./tiddlywiki:/app
+      - ./build/nginx.conf:/etc/nginx/http.d/default.conf
       - ./build/.htpasswd:/etc/nginx/.htpasswd
+    ports:
+      - "80:80"
 ```
 
 Then restart the container.

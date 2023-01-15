@@ -17,7 +17,7 @@ Add the following to the `location / { ... }` section of your `build/nginx.conf`
     }
 ```
 
-## Tiddlywiki Setup
+## Setup Tiddlywiki
 
 In your Tiddlywiki you will need to edit some shadow tiddlers to override them.
 
