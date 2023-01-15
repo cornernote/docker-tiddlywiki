@@ -3,7 +3,7 @@
 ## Build Image
 
 ```shell
-docker compose build
+docker compose build --no-cache
 ```
 
 ## Tag Image:
