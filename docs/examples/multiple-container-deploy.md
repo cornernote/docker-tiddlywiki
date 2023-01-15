@@ -17,9 +17,7 @@ upstream websocket {
 }
 ```
 
-Update your application definition.
-
-`cat > docker-compose.yml` (paste from below, the `CTRL+D`)
+Update your `docker-compose.yml` 
 
 ```yaml
 version: '3'
