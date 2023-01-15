@@ -65,7 +65,7 @@ The image provides several services to run a multi-user tiddlywiki server.
 ## Supported Tags
 
 - `latest`
-- `5.2.3-bob-1.7.1`
+- `5.2.3-bob-1.7.3b1`
 
 
 ## Resources
