@@ -23,8 +23,7 @@ The image provides tiddlywiki and related services.
 docker run -d -p 80:80 cornernote/tiddlywiki
 ```
 
-Now access your tiddlywiki from [http://localhost/](http://localhost/).  The user/pass is `admin`/`admin`.
-
+Now access your tiddlywiki from [http://localhost/](http://localhost/). 
 
 ### Using Docker Compose
 
