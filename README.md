@@ -36,7 +36,7 @@ Docker compose allows you to keep all the configuration for the docker image in 
 version: '3'
 services:
   php:
-    image: cornernote/tiddlywiki
+    image: cornernote/tiddlywiki:5.2.3-bob-1.7.1
     volumes:
       - ./tiddlywiki:/app
     ports:
