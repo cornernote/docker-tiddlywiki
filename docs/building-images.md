@@ -6,12 +6,13 @@
 docker compose build
 ```
 
-This will show a TagID, for example `aa870edc0261`.
-
 ## Tag Image:
 
+Use `docker images` to get the Image ID, for example `4905859521ec`.
+
+
 ```shell
-docker tag aa870edc0261 cornernote/tiddlywiki:latest
+docker tag 4905859521ec cornernote/tiddlywiki:latest
 ```
 
 ## Push Image
