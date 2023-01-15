@@ -40,7 +40,7 @@ services:
       - "80:80"
 ```
 
-Change the bob wiki settings `ws-server.host` to `0.0.0.0` as follows:
+Change the bob wiki settings file `/app/wikis/BobWiki/settings/settings.json` to broadcast to all hosts by changing `ws-server.host` to `0.0.0.0` as follows:
 
 ```shell
   "ws-server": {
