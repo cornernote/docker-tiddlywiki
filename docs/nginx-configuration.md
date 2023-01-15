@@ -7,9 +7,7 @@ mkdir build
 docker cp root_tiddlywiki_1:/etc/nginx/http.d/default.conf build/nginx.conf
 ```
 
-Change as desired, then update your application definition.
-
-`cat > docker-compose.yml` (paste from below, the `CTRL+D`)
+Change as desired, then update your `docker-compose.yml`.
 
 ```yaml
 version: '3'

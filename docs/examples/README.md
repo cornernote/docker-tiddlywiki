@@ -14,6 +14,6 @@ You can try this image on any system with `docker compose` installed.  Alternati
 
 When all else fails, check the logs.
 
-```shell script
+```shell
 docker compose logs -f
 ```
