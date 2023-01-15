@@ -7,8 +7,8 @@ The image provides tiddlywiki and related services.
 
 ## Features
 
-- [Tiddlywiki](https://tiddlywiki.com/) - The most awesome way to take notes.
-- [TW5-Bob](https://github.com/OokTech/TW5-Bob) - Provides real-time multi-user using web sockets.
+- [Tiddlywiki](https://tiddlywiki.com/) - The most awesome way to keep notes.
+- [TW5-Bob](https://github.com/OokTech/TW5-Bob) - Provides real-time and multi-user using web sockets.
 - [Nginx](https://www.nginx.com/) - Reverse proxy for:
   - [Basic Authentication](docs/basic-authentication.md)
   - [HTTPS/SSL Certificates](docs/ssl-installation.md)
@@ -35,7 +35,7 @@ Docker compose allows you to keep all the configuration for the docker image in 
 version: '3'
 services:
   php:
-    image: cornernote/tiddlywiki:5.2.3-bob-1.7.1
+    image: cornernote/tiddlywiki:5.2.3-bob-1.7.3b1
     volumes:
       - ./tiddlywiki:/app
     ports:
