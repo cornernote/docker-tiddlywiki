@@ -4,15 +4,18 @@ The image provides tiddlywiki and related services.
 
 [![Pulls](https://img.shields.io/docker/pulls/cornernote/tiddlywiki.svg?style=flat-square)](https://hub.docker.com/r/cornernote/tiddlywiki/)
 
+
 ## Features
 
 - [Tiddlywiki](https://tiddlywiki.com/) - The most awesome way to take notes.
 - [TW5-Bob](https://github.com/OokTech/TW5-Bob) - Provides real-time multi-user using web sockets.
 - [Nginx](https://www.nginx.com/) - Reverse proxy for:
   - [User Management](docs/user-management.md)
-  - [HTTPS/SSL Certificates](docs/ssl-configuration.md)
+  - [HTTPS/SSL Certificates](docs/ssl-installation.md)
+
 
 ## Installation
+
 
 ### Quick Start
 
@@ -59,9 +62,10 @@ The image provides several services to run a multi-user tiddlywiki server.
 - [Supervisor](http://supervisord.org/) - allows multiple processes to run within a single container
 
 
-## Supported tags and `Dockerfile` links
+## Supported Tags
 
-### `latest` [Dockerfile](https://github.com/cornernote/docker-tiddlywiki/blob/main/Dockerfile)
+- `latest`
+- `5.2.3-bob-1.7.1`
 
 
 ## Resources
