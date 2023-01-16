@@ -23,7 +23,7 @@ server {
     # redirect all requests to https
     location / {
         # set the port if you redirect the https port in docker-compose.yml
-        return 301 https://${SERVER_NAME}$request_uri:443;
+        return 301 https://${SERVER_NAME}:443$request_uri;
     }
 }
 ```
