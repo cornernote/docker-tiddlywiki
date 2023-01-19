@@ -15,7 +15,7 @@ Change as desired, then update your application definition.
 ```yaml
 version: '3'
 services:
-  php:
+  tiddlywiki:
     image: cornernote/tiddlywiki
     volumes:
       - ./build/supervisord.conf:/etc/supervisor/supervisord.conf

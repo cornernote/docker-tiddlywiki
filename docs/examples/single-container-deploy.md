@@ -18,7 +18,7 @@ Update your application definition.
 ```yaml
 version: '3'
 services:
-  php:
+  tiddlywiki:
     image: cornernote/tiddlywiki
     volumes:
       - ./tiddlywiki:/app

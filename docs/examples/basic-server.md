@@ -7,7 +7,7 @@ Create a `cornernote/docker-tiddlywiki` application definition:
 ```yaml
 version: '3'
 services:
-  php:
+  tiddlywiki:
     image: cornernote/tiddlywiki
     ports:
       - "80:80"

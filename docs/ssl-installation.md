@@ -33,7 +33,7 @@ Add the `nginx.conf` to your `docker-compose.yml` and expose port `443`. You can
 ```yaml
 version: '3'
 services:
-  php:
+  tiddlywiki:
     image: cornernote/tiddlywiki
     volumes:
       - ./build/nginx.conf:/etc/nginx/http.d/default.conf
@@ -118,7 +118,7 @@ Add volumes to `docker-compose.yml` from your local certificate to the container
 ```yaml
 version: '3'
 services:
-  php:
+  tiddlywiki:
     image: cornernote/tiddlywiki
     volumes:
       - ./build/nginx.conf:/etc/nginx/http.d/default.conf
