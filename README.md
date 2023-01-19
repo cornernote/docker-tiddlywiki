@@ -34,7 +34,7 @@ Docker compose allows you to keep all the configuration for the docker image in 
 ```yaml
 version: '3'
 services:
-  php:
+  tiddlywiki:
     image: cornernote/tiddlywiki:5.2.3-bob-1.7.3b1
     volumes:
       - ./tiddlywiki:/app
