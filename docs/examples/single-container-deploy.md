@@ -8,7 +8,7 @@ No configuration is needed, however if you want to run other services you can co
 
 ```shell
 mkdir build
-docker cp root_tiddlywiki_1:/etc/supervisord/supervisord.conf build/supervisord.conf
+docker compose cp tiddlywiki:/etc/supervisord/supervisord.conf build/supervisord.conf
 ```
 
 Update your application definition.

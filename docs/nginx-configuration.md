@@ -4,7 +4,7 @@ Copy the nginx configuration from the image.
 
 ```shell
 mkdir build
-docker cp root_tiddlywiki_1:/etc/nginx/http.d/default.conf build/nginx.conf
+docker compose cp tiddlywiki:/etc/nginx/http.d/default.conf build/nginx.conf
 ```
 
 Change as desired, then update your `docker-compose.yml`.

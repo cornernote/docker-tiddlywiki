@@ -4,7 +4,7 @@ Copy the supervisor configuration from the image.
 
 ```shell
 mkdir build
-docker cp root_tiddlywiki_1:/etc/supervisor/supervisord.conf build/supervisord.conf
+docker compose cp tiddlywiki:/etc/supervisor/supervisord.conf build/supervisord.conf
 ```
 
 Change as desired, then update your application definition.
