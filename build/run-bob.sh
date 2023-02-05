@@ -8,4 +8,4 @@ if [ ! -d /app/wikis ]; then
   mv /app/wikis/BobWiki/settings/docker-settings.json /app/wikis/BobWiki/settings/settings.json
 fi
 
-node /usr/local/tiddlywiki/tiddlywiki wikis/BobWiki
+node /usr/local/tiddlywiki/tiddlywiki wikis/BobWiki --wsserver

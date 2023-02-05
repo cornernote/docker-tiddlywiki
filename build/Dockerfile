@@ -23,6 +23,7 @@ COPY nginx.conf /etc/nginx/http.d/default.conf
 
 COPY --chmod=755 run-supervisor.sh /usr/local/bin
 COPY --chmod=755 run-nginx.sh /usr/local/bin
+COPY --chmod=755 run-bob.sh /usr/local/bin
 COPY --chmod=755 run-tiddlywiki.sh /usr/local/bin
 
 CMD ["run-supervisor.sh"]

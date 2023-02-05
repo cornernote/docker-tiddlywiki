@@ -8,12 +8,12 @@ docker compose build --no-cache
 
 ## Tag Image:
 
-Use `docker images` to get the Image ID, for example `4905859521ec`.
+Use `docker images` to get the Image ID, for example `860f680b2496`.
 
 
 ```shell
-docker tag c5eabb67e4ab cornernote/tiddlywiki:latest
-docker tag c5eabb67e4ab cornernote/tiddlywiki:5.2.3-bob-1.7.3b1
+docker tag 860f680b2496 cornernote/tiddlywiki:latest
+docker tag 860f680b2496 cornernote/tiddlywiki:5.2.3-bob-1.7.3b1
 ```
 
 ## Push Image
