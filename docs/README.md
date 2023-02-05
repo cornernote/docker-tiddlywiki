@@ -13,9 +13,9 @@
 
 ## Service Configuration
 
-* [Examples](examples/README.md)
 * [Nginx Configuration](nginx-configuration.md)
 * [Supervisor Configuration](supervisor-configuration.md)
+* [More Examples](examples/README.md)
 
 ## Development
 
