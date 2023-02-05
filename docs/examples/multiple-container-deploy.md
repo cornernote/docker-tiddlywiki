@@ -25,7 +25,7 @@ services:
 
   tiddlywiki:
     image: cornernote/tiddlywiki
-    entrypoint: run-tiddlywiki.sh
+    entrypoint: run-bob.sh
     volumes:
       - ./tiddlywiki:/app
 

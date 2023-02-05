@@ -11,4 +11,5 @@ services:
     ports:
       - "1234:80"
     #entrypoint: run-nginx.sh
+    #entrypoint: run-bob.sh
     #entrypoint: run-tiddlywiki.sh
