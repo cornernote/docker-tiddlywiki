@@ -15,7 +15,7 @@ RUN apk update && \
         nginx  \
         openssl  \
         certbot && \
-    git clone --depth=1 --branch v5.2.3 https://github.com/Jermolene/TiddlyWiki5.git /usr/local/tiddlywiki && \
+    git clone --depth=1 --branch v5.2.5 https://github.com/Jermolene/TiddlyWiki5.git /usr/local/tiddlywiki && \
     git clone --depth=1 --branch 1.7.3b1 https://github.com/OokTech/TW5-Bob.git /usr/local/tiddlywiki/plugins/OokTech/Bob
 
 COPY supervisord.conf /etc/supervisor/supervisord.conf
